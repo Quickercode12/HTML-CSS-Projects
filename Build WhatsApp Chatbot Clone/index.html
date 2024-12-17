@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Chatbox Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links an external CSS file for using the Material Design Iconic Font. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Includes the jQuery library from a CDN (Content Delivery Network), which is a JavaScript library to simplify HTML DOM manipulation and event handling. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- : Includes the ResponsiveVoice JavaScript library, which provides text-to-speech functionality. -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat-container">
+        <div id="call" class="user-bar">
+          <div class="back" aria-label="Go back">
+            <i class="zmdi zmdi-arrow-left"></i>
+          </div>
+          <div class="avatar">
+            <img
+              src="https://www.codewithfaraz.com/InstaPic.png"
+              alt="Avatar"
+            />
+          </div>
+          <div class="name">
+            <span id="name"></span>
+            <span class="status"></span>
+          </div>
+          <div class="actions more" aria-label="More options">
+            <i class="zmdi zmdi-more-vert"></i>
+          </div>
+          <div class="actions attachment" aria-label="Attach file">
+            <i class="zmdi zmdi-attachment-alt"></i>
+          </div>
+          <div class="actions" aria-label="Make a call">
+            <i class="zmdi zmdi-phone"></i>
+          </div>
+        </div>
+        <div class="conversation">
+          <div class="conversation-container">
+            <span id="ap"></span>
+          </div>
+          <form id="form" class="conversation-compose" onsubmit="return false;">
+            <div class="emoji"></div>
+            <input
+              id="val"
+              class="input-msg"
+              name="input"
+              placeholder="Type a message"
+              autocomplete="off"
+              autofocus
+            />
+            <div class="photo" aria-label="Add photo">
+              <i class="zmdi zmdi-camera"></i>
+            </div>
+            <span id="speak"></span>
+            <span class="send">
+              <div class="circle" aria-label="Send message">
+                <i id="msend" class="zmdi zmdi-mail-send"></i>
+              </div>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="javaScript.js"></script>
+  </body>
+</html>
